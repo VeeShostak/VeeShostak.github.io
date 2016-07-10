@@ -383,13 +383,11 @@ header .descriptionOne {
   -webkit-transition: 1s;
   transition: 1s;
 
- 
-
 }
 
-.imgWrap img:hover {
-  -webkit-transform:scale(1.2);
-  transform:scale(1.2);
+.imgWrap img:active, .imgWrap img:focus {
+  -webkit-transform:scale(1.1);
+  transform:scale(1.1);
 
   filter: alpha(opacity=80);
   opacity: 0.8;
