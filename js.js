@@ -42,24 +42,43 @@ $(document).ready(function() {
 
 
 // mixitup instantiate with custom configuration
-$(function () {
-  
+// animation disabled on page load, then enable for subsequent operations
+
     $('#portfoliolist').mixItUp({
+        
         animation: {
+            enable: false
+        },
+        load: {
+            filter: '.mobile, .data, .web' // on initial load show the load tab
+        },
 
-            
-            effects: ' stagger(1ms) fade scale(0.3) translateZ(-960px)' ,
-            duration: 460,
-            easing: 'ease',
-            animateResizeTargets: true , // for flex box
-        },  
-         load: {
-              filter: '.mobile, .data, .web' // on initial load show the load tab
-            }
 
+        callbacks: {
+            onMixLoad: function(){
+
+
+                $(this).mixItUp('setOptions', {
+                    animation: {
+
+                        enable: true,
+                        effects: 'stagger(1ms) fade scale(0.3) translateZ(-960px)' ,
+                        duration: 460,
+                        easing: 'ease',
+                        animateResizeTargets: true , // for flex box
+                    },  
+                     load: {
+                        filter: '.mobile, .data, .web' // on initial load show the load tab
+                    },
+
+                });
+
+            } // onmixload: function close
+
+        } //callbacks close
 
     });
 
-});
+
 
 }); // on ready close
