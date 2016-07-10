@@ -1,5 +1,9 @@
 
 $(document).ready(function() {
+
+    // make touch(mobile devices) act like a hover
+    $('body').bind('touchstart', function() {});
+
     // on click of the link element found inside an element in the body
     // with the section-transition class (.sec-trans)
     $('body').on('click', '.sec-trans a', function(event) {

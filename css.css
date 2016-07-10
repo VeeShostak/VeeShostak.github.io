@@ -388,7 +388,7 @@ header .descriptionOne {
 
 }
 
-.imgWrap img:hover, .imgWrap img:active {
+.imgWrap img:hover {
   -webkit-transform:scale(1.2);
   transform:scale(1.2);
 
