@@ -1,0 +1,457 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="author" content="Vee Shostak">
+    <meta name="description" content="Vlad Shostak is a Software Engineer.">
+
+    <meta name="keywords" content="Vlad Shostak, Vlad, Shostak, vee, shostak, vee shostak, veeshostak, veeshostak github, github, software engineering, software development, web development, software developer, developer">
+
+    <!-- Mobile Optimized (correct rendering and touch zooming)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>VShostak's Portoflio</title>
+
+
+<!-- jQuery minified -->
+<script type="text/javascript" src="jquery/jquery-3.0.0.min.js"></script>
+
+<!-- bootstrap jQuery plugins -->
+<script src="bootstrap/jquery.js"></script>
+
+<!-- Bootstrap CSS (Latest compiled and minified CSS) -->
+<link rel="stylesheet" href="bootstrap/bootstrap.min.css" type="text/css" />
+
+<!-- Bootstrap min js (Latest compiled and minified JavaScript) -->
+<script type="text/javascript" src="bootstrap/bootstrap.min.js"></script>
+
+<!-- Bootstrap custom social icon -->
+<link rel="stylesheet" href="bootstrap-social-icons/bootstrap-social.css" type="text/css" />
+
+
+<!-- mixitup minified -->
+<script type="text/javascript" src="mixitup/jquery.mixitup.min.js"></script>
+
+
+<!-- Font Awesome icons -->
+<link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+
+<!-- my Custom CSS files -->
+<link rel="stylesheet" href="css.css" type="text/css" />
+
+<!-- my Custom js files -->
+ <script type="text/javascript" src="js.js"></script>
+
+</head>
+
+
+<!-- START Project ==================================================
+=====================================================================-->
+<body data-spy="scroll" data-target=".navbar" data-offset = "55">
+
+    <!-- START Navigation Bar
+    ================================================================-->
+     <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+
+            <!-- change nav bar to a toggable button for small displays,
+            when clicked a menu of the sections shows up -->
+            <div class="navbar-header sec-trans">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapseNav">
+                    <span class="icon-bar barTop"></span>
+                    <span class="icon-bar barMid"></span>
+                    <span class="icon-bar barLow"></span>
+                </button>
+                <a class="navbar-brand " href="#home" title = "Vee Shostak">VShostak</a>
+            </div>
+
+            <!-- sections in the navbar -->
+            <div class="collapse navbar-collapse" id="collapseNav">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="sec-trans center-underline">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="sec-trans center-underline">
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="sec-trans center-underline">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="sec-trans center-underline">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+     <!-- END Navigation Bar
+    ================================================================-->
+
+    <!-- START Home header
+    ================================================================-->
+
+    <!-- video in background -->
+        <video autoplay  poster="images/video/vid1.jpg" id="headVid">
+            <source src="images/video/vid1.webm" type="video/webm">
+            <source src="images/video/vid1.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+
+    <header id="home">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <div class="imgWrap">
+                        <img  class="img-circle img-responsive center-block" src="images/VladImage1.jpg" alt="" width="300" height="250"> 
+                    </div>
+
+                    <span class="headTitleOne">VShostak</span>
+                    <hr class =" typeOne">
+                    <span class="descriptionOne">Software Developer</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+
+    <!-- END Home header
+   ================================================================-->
+
+
+
+    <!-- START Portfolio
+   ================================================================-->
+    <section class = "portfolioPage" id="portfolio">
+        <div class="container ">
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Portfolio</h2>
+                    <hr class="typeTwo">
+                </div>
+            </div>
+
+            <!-- START mixitup list -->
+
+            <!-- filter controls (categories) -->
+            <ul class="filterOptions text-center">
+                <li class="filter" data-filter=".mobile, .data, .web">All</li>
+                <li class="filter" data-filter=".mobile">Mobile</li>
+                <li class="filter" data-filter=".data">Data</li>
+                <li class="filter" data-filter=".web">Web</li>
+            </div>
+
+        <!-- START Portfolio Items -->
+
+        <!-- NOTE: style removes flexbox padding -->
+        <div style="padding:1px;">
+        <div id="portfoliolist" class = "row containerMix">
+
+            <!-- item 1 -->
+            <div class="mix mobile  portfolio-item " data-toggle="modal" data-target=#portfolioItem1>
+                <div class="scaleEffect">
+                    <a href="#portfolioItem1">
+                        <img src="images/projects/place1.jpg" class="img-responsive"  alt="" >
+                    </a>
+                </div>
+            </div>
+
+            <!-- item 2 -->
+            <div class="mix data  portfolio-item " data-toggle="modal" data-target=#portfolioItem2>
+                <div class="scaleEffect">
+                    <a href="#portfolioItem2">
+                        <img src="images/projects/place2.jpg" class="img-responsive"  alt="" >
+                    </a>
+                </div>
+            </div>
+
+            <!-- item 3 -->
+            <div class="mix web  portfolio-item " data-toggle="modal" data-target=#portfolioItem3>
+                <div class="scaleEffect">
+                    <a href="#portfolioItem3">
+                        <img src="images/projects/place3.jpg" class="img-responsive"  alt="" >
+                    </a>
+                </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="mix mobile  portfolio-item " data-toggle="modal" data-target=#portfolioItem4>
+                <div class="scaleEffect">
+                    <a href="#portfolioItem4">
+                        <img src="images/projects/place1.jpg" class="img-responsive"  alt="" >
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- Item 5 -->
+            <div class="mix data portfolio-item " data-toggle="modal" data-target=#portfolioItem5>
+                <div class="scaleEffect">
+                    <a href="#portfolioItem5">
+                        <img src="images/projects/place2.jpg" class="img-responsive"  alt="" >
+                    </a>
+                </div>
+            </div>
+
+            <div class="gap mix mobile data web"></div>
+            <div class="gap mix mobile data web"></div>
+
+        </div>
+        </div>
+        <!-- END Portfolio Items -->
+
+            <!-- START Portfolio Items MODALS -->
+
+            <!-- NOTE: place everything in modal body to have your own formatting
+            (no bootstrap default added hr breaks, padding..etc, after each section) -->
+
+            <!-- item 1 modal -->
+            <div id="portfolioItem1" class=" modal fade " tabindex="=-1" role="dialog" aria-labelledby="portfolioModalLabel1" >
+                <!-- content of modal -->
+                <div class="modal-content ">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 col-lg-offset-2">
+
+                                <div class="modal-body">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <!-- Title -->
+                                    <h2 class="modal-title text-center" id="portfolioModalLabel1">Modal Title</h2>
+                                    <hr class="typeTwo">
+
+                                    <img src="images/projects/place1.jpg" class="img-responsive img-center"  alt="" >
+                                    <!-- Description -->
+                                    <hr>
+                                    <h3 class = "modalHeaderOne">Description:</h3>
+                                    <p class = "modalParaOne"> The project description appears here. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, et, ea, accusantium reprehenderit aliquam numquam fuga natus fugiat odit distinctio. </p>
+                                    <!-- Link to view project -->
+                                    <hr>
+                                    <a class="btn btn-primary btn-lg center-block" href="#" target="_blank" role="button">View Project</a>
+                                    <!-- Details-->
+                                    <hr>
+                                    <h3 class = "modalHeaderOne">Details:</h3>
+                                    <div class="modalParaOne">
+                                    <p>
+                                    <strong>Service:</strong> Software Development
+                                    </p>
+                                    <p>
+                                    <strong>Type:</strong> C++, Java, Databases
+                                    </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">Close</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- END Portfolio Items MODALS -->
+
+        </div>
+        <!-- END mixitup list -->
+
+        </div>
+    </section>
+    <!-- END Portfolio
+   ================================================================-->
+
+    <!-- START About
+   ================================================================-->
+    <section class="aboutPage" id="about">
+
+    <!-- for flexbox -->
+    <div class=" smoothMargin"></div>
+
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>About</h2>
+                    <hr class="typeOne">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+
+                    <p class="text-center center-block">Currently pursuing a Bachelor in Computer Science with a Minor in Mathematics and Economics at The City University of New York at Hunter College.</p>
+
+                    <hr class ="typeThree">
+                    <p class ="text-center center-block">Some of the covered topics include:</p>
+
+
+
+                    <ul >
+                        <li>Software Design and Analysis in C++
+                        (Programing, Data Structures and Algorithms)</li>
+
+                        <li>Computer Architecture
+                        (Architecture and Logic Design)</li>
+                        <li>Discrete Structures/Mathematics</li>
+                        <li>Computer Theory</li>
+
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- END About
+   ================================================================-->
+
+
+
+    <!-- START Contact
+   ================================================================-->
+
+    <!-- Contact Section -->
+    <section class="contactPage" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <h2>Contact</h2>
+                    <hr class="typeTwo">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <p class = "center-block">Seeking an internship opportunity in software development and engineering in order to develop my professional expertise and provide a significant contribution to the company.</p>
+                </div>
+
+            </div>
+            <hr>
+
+            <div class="row">
+                <div class="col-xs-12 ">
+                    <a class="btn btn-block btn-social btn-github btn-lg center-block" href="https://github.com/VeeShostak" target="_blank" role="button">
+                        <span class="fa fa-github"></span>GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <a class="btn btn-block btn-social btn-linkedin btn-lg center-block" href="https://www.linkedin.com/" target="_blank" role="button">
+                        <span class="fa fa-linkedin" href="#"></span>LinkedIn
+                    </a>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <a class="btn btn-block btn-social btn-google btn-lg center-block" href="mailto:veeshostak@gmail.com" target="_blank" role="button">
+                        <span class="fa fa-google" href="#"></span>Gmail
+                    </a>
+
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- END Contact
+   ================================================================-->
+
+
+    <!-- START Footer
+   ================================================================-->
+    <footer class="text-center">
+        <div class="footerDescriptionOne">
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="footerEachColumnOne col-md-6">
+                        <h3>Contact</h3>
+
+                        <div class="row footerContact center-block">
+                            <div class="col-xs-4 ">
+                                <a class="btn btn-social-icon btn-github btn-lg " href="https://github.com/VeeShostak" target="_blank" role="button">
+                                    <span class="fa fa-github"></span>
+                                </a>
+                            </div>
+
+                            <div class="col-xs-4">
+                                <a class="btn btn-social-icon btn-linkedin btn-lg " href="https://www.linkedin.com/" target="_blank" role="button">
+                                    <span class="fa fa-linkedin" href="#"></span>
+                                </a>
+                            </div>
+
+                            <div class="col-xs-4">
+                                <a class="btn btn-social-icon btn-google btn-lg " href="mailto:veeshostak@gmail.com" target="_blank" role="button">
+                                    <span class="fa fa-google" href="#"></span>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="footerEachColumnOne col-md-6">
+                        <h3>Navigation</h3>
+                        <ul class="list-inline">
+                            <li class="sec-trans">
+                                <a href="#home">Home</a>
+                            </li>
+
+                            <li class="sec-trans">
+                                <a href="#portfolio">Portfolio</a>
+                            </li>
+
+                            <li class="sec-trans">
+                                <a href="#about">About</a>
+                            </li>
+
+                            <li class="sec-trans">
+                                <a href="#contact">Contact</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="footerDescriptionTwo">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; Vlad Shostak 2016
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+    <!-- END Footer
+   ================================================================-->
+
+</body>
+
+<!-- END Project ==================================================
+=====================================================================-->
+
+</html>
