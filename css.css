@@ -337,7 +337,7 @@ video#headVid {
     -webkit-transform: translateX(-50%) translateY(-50%);
 }
 
-/*@media screen and (max-device-width: 800px) {
+@media screen and (max-device-width: 800px) {
     header {
         background: url("images/video/vid1.jpg") no-repeat;
         background-attachment: scroll;
@@ -348,7 +348,7 @@ video#headVid {
     #headVid {
         display: none;
     }
-}*/
+}
 
 header {
     text-align: center;
