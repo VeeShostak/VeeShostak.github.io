@@ -10,9 +10,9 @@ h1, h2, h3, h4, h5, h6 {
     font-family:Georgia, serif;
     font-weight: 700;
     font-style:normal;
-    
+
     font-size:45px;
-    
+
 
     margin:0;
     padding:0;
@@ -65,7 +65,7 @@ hr.typeOne {
 }
 
 hr.typeTwo {
-    
+
     display: block;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -100,15 +100,15 @@ hr.typeThree {
     background-color: #ed6639;
 }
 
-.navbar-default .navbar-nav li a { 
-    color: #FFFFFF !important; 
+.navbar-default .navbar-nav li a {
+    color: #FFFFFF !important;
 }
 .navbar-default .navbar-nav li a:focus {
     color: #ed6639;
-    
+
 }
 
-.navbar-default .navbar-nav li a:hover { 
+.navbar-default .navbar-nav li a:hover {
     color: #ed6639 !important;
     -webkit-transition: all .55s;
     transition: all .55s;
@@ -145,7 +145,7 @@ hr.typeThree {
 
 .navbar-default .navbar-brand:hover {
     color:#ffffff;
-    
+
 }
 
 /*start navbar active scroll*/
@@ -211,7 +211,7 @@ hr.typeThree {
     font-weight: 700;
 }
 .navbar-brand {
-    
+
     font-family: 'Shrikhand', Georgia, serif;
     font-weight: 700;
     font-style: normal;
@@ -239,7 +239,7 @@ nav.navbar {
 
 }
 nav.navbar.shrink {
-  
+
   background:#3E444D;
 }
 
@@ -290,7 +290,7 @@ nav .navbar-toggle {
 .center-underline:before {
   content: "";
   visibility: hidden;
-  
+
   position: absolute;
   width: 100%;
   height: 3px;
@@ -305,7 +305,7 @@ nav .navbar-toggle {
   transition: all .2s ease-in-out 0s;
 }
 
-.center-underline:hover:before{
+.center-underline:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
@@ -320,78 +320,89 @@ nav .navbar-toggle {
 /* Start Home Header
 ============================================================= */
 
+/* Start home video */
 
-video#headVid { 
-    position: fixed;
-    background: url("images/video/vid1.jpg") no-repeat;
-    background-size: cover; 
-    min-width: 100%;
-    min-height: 100%;
-    
-    top: 50%;
-    left: 50%;
-    width: auto;
-    height: auto;
-    z-index: -99;
-    transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-}
-
-@media screen and (max-device-width: 800px) {
-    header {
-        background: url("images/video/vid1.jpg") no-repeat;
-        background-attachment: scroll;
-
-        background-size: cover;
-        background-position: center;
-    }
-    #headVid {
-        display: none;
-    }
-}
-
-header {
+.vid-content {
+    position:absolute;
+    z-index: 1000;
+    top: 25%;
     text-align: center;
-    color: #FFFFFF;
-    /*background: #385b9f;*/
+    width:100%;
+    color:#FFFFFF;
 }
 
-header .container {
-    margin-top: 200px;
-    margin-bottom: 75px;
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
 }
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
+}
+/* End home video */
 
 
-header .headTitleOne {
+.headTitleOne {
     display: block;
     text-transform: uppercase;
     font-family: 'Shrikhand', Georgia, serif;
     font-size: 50px;
     font-weight: 700;
-    
+
 }
 
-header .descriptionOne {
+.descriptionOne {
     font-family: Georgia, serif;
     font-size: 20px;
     font-weight: 700;
 
 }
 
-
 .imgWrap img {
-  -webkit-transition: 1s;
-  transition: 1s;
+    -webkit-transition: 1s;
+    transition: 1s;
 
 }
 
 .imgWrap img:active, .imgWrap img:focus {
-  -webkit-transform:scale(1.1);
-  transform:scale(1.1);
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1);
 
-  filter: alpha(opacity=80);
-  opacity: 0.8;
-  
+    filter: alpha(opacity=80);
+    opacity: 0.8;
 
 }
 
@@ -409,7 +420,7 @@ header .descriptionOne {
 /* start mixitup*/
 #portfoliolist .mix {
     display:none;
-    
+
 }
 /* end mixitup*/
 
@@ -430,7 +441,7 @@ section.portfolioPage {
 
 
 .modalHeaderOne {
-    
+
     font-family:Georgia, serif;
     font-weight:normal;
     text-align: left;
@@ -440,7 +451,7 @@ section.portfolioPage {
     font-style:normal;
     margin-top:20px;
     margin-bottom:20px;
-    
+
     padding:0;
 }
  .modalParaOne {
@@ -448,7 +459,7 @@ section.portfolioPage {
     font-weight:noraml;
     text-align: left;
 
-    
+
     font-size:20px;
     font-style:normal;
     margin:0;
@@ -463,11 +474,11 @@ section.portfolioPage {
   min-width: 98%;
   padding: 0;
   margin:5px;
-  
+
 }
 
 .modal-content a {
-  
+
   max-width: 200px
 }
 
@@ -519,7 +530,7 @@ section.portfolioPage {
   text-align: justify;
   font-size: 0;
 
-  max-width: 1200px; 
+  max-width: 1200px;
   margin:auto;
 }
 
@@ -532,7 +543,7 @@ section.portfolioPage {
 .containerMix .portfolio-item {
 
   text-align: left;
-  
+
   margin-bottom: 2%;
 }
 
@@ -576,7 +587,7 @@ section.portfolioPage {
 ============================================================= */
 section.aboutPage {
     color: #fff;
-    background: #385b9f;    
+    background: #385b9f;
 }
 
 .aboutPage ul li {
@@ -592,9 +603,9 @@ section.aboutPage {
 }
 .aboutPage ul {
   margin:auto;
-  padding:0; 
+  padding:0;
   max-width: 750px;
-    
+
 }
 
 .aboutPage p {
@@ -651,20 +662,20 @@ footer {
 
 
 
-footer li a { 
-    color: #FFFFFF; 
+footer li a {
+    color: #FFFFFF;
     font-family:Georgia, serif;
     font-weight:normal;
     font-size:20px;
     font-style:normal;
-   
+
 }
 footer li a:focus {
     color: inherit;
-    
+
 }
 
-footer li a:hover { 
+footer li a:hover {
     color: #ed6639 !important;
     -webkit-transition: all .55s;
     transition: all .55s;
@@ -700,5 +711,3 @@ footer .footerDescriptionTwo {
 
 /* END Footer
 ============================================================= */
-
-

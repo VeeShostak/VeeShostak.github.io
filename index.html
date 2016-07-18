@@ -14,7 +14,6 @@
 
   <title>VShostak's Portoflio</title>
 
-
 <!-- jQuery minified -->
 <script type="text/javascript" src="jquery/jquery-3.0.0.min.js"></script>
 
@@ -30,16 +29,15 @@
 <!-- Bootstrap custom social icon -->
 <link rel="stylesheet" href="bootstrap-social-icons/bootstrap-social.css" type="text/css" />
 
-
 <!-- mixitup minified -->
 <script type="text/javascript" src="mixitup/jquery.mixitup.min.js"></script>
-
 
 <!-- Font Awesome icons -->
 <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">
 
 <!-- Fonts -->
 <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+
 
 <!-- my Custom CSS files -->
 <link rel="stylesheet" href="css.css" type="text/css" />
@@ -52,7 +50,7 @@
 
 <!-- START Project ==================================================
 =====================================================================-->
-<body data-spy="scroll" data-target=".navbar" data-offset = "55">
+<body id="home" data-spy="scroll" data-target=".navbar" data-offset = "55">
 
     <!-- START Navigation Bar
     ================================================================-->
@@ -94,39 +92,34 @@
      <!-- END Navigation Bar
     ================================================================-->
 
-    <!-- START Home header
+    <!-- START Home
     ================================================================-->
+<header>
+    <div class="homepage-hero-module" >
+        <div class="video-container">
 
-    <!-- video in background -->
-        <video autoplay  poster="images/video/vid1.jpg" id="headVid">
-            <source src="images/video/vid1.webm" type="video/webm">
-            <source src="images/video/vid1.mp4" type="video/mp4">
-            Your browser does not support HTML5 video.
-        </video>
-
-    <header id="home">
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-lg-12">
-
-                    <div class="imgWrap">
-                        <img class="img-circle img-responsive center-block" src="images/VladImage1.jpg" alt="" width="300" height="250"> 
-                    </div>
-
-                    <span class="headTitleOne">VShostak</span>
-                    <hr class =" typeOne">
-                    <span class="descriptionOne">Software Developer</span>
+            <div class="vid-content">
+                <div class="imgWrap">
+                    <img class="img-circle img-responsive center-block" src="images/VladImage1.jpg" alt="" width="250" height="150">
                 </div>
+                <span class="headTitleOne">VShostak</span>
+                <hr class =" typeOne">
+                <span class="descriptionOne">Software Developer</span>
             </div>
+
+            <div class="filter"></div>
+            <video autoplay loop class="fillWidth">
+                <source src="images/video/vid1.mp4" type="video/mp4" />Your browser does not support HTML5 video.
+                <source src="images/video/vid1.webm" type="video/webm" />Your browser does not support HTML5 video.
+            </video>
+            <div class="poster hidden">
+                <img src="images/video/vid1.jpg" alt="">
+            </div>
+
         </div>
-    </header>
-
-
-
-
-
-
-    <!-- END Home header
+    </div>
+</header>
+    <!-- END Home
    ================================================================-->
 
 
