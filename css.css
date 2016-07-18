@@ -602,6 +602,7 @@ section.aboutPage {
 
 }
 .aboutPage ul {
+  list-style: none;
   margin:auto;
   padding:0;
   max-width: 750px;
